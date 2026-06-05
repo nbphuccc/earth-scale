@@ -1,4 +1,4 @@
-const DEFAULT_WIDTH = 1400;
+const DEFAULT_WIDTH = 1200;
 
 const objects = [
     { name: "Earth", pixels: 1, color: "#4CAF50" },
