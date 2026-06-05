@@ -8,18 +8,18 @@ const objects = [
     { name: "Average White Dwarf", pixels: 200000, color: "#E6E6E6" },
 
     // ~1 solar mass
-    { name: "Average Red Giant / Sun", pixels: 333000, color: "#FF4500" },
+    { name: "Average Red Giant / Sun", pixels: 300000, color: "#FF4500" },
 
     // representative stellar black hole (~7.5 solar masses)
-    { name: "Black Hole", pixels: 2500000, color: "#6A0DAD" },
+    { name: "Average Black Hole", pixels: 2500000, color: "#6A0DAD" },
 
     {
-    name: "Intermediate-Mass Black Hole",
+    name: "Small Large Stellar Black Hole",
     pixels: 30000000, // ~100 solar masses (visual-friendly scaled representation)
     color: "#3A0CA3"
 },
 
-    {name: "Smallest Supermassive Black Hole", pixels: 33000000000, color: "#2E0854"}
+    {name: "Small Supermassive Black Hole", pixels: 33000000000, color: "#2E0854"}
 ];
 
 const container = document.getElementById("container");
@@ -59,8 +59,8 @@ if (!noRuler) {
     ruler.className = "ruler";
     ruler.style.height = height + "px";
 
-    const isIntermediateBH = obj.name === "Intermediate-Mass Black Hole";
-    const isSMBH = obj.name === "Smallest Supermassive Black Hole";
+    const isIntermediateBH = obj.name === "Small Large Stellar Black Hole";
+    const isSMBH = obj.name === "Small Supermassive Black Hole";
 
     if (isIntermediateBH) {
         const step = 500000; // 500k only for IMBH
