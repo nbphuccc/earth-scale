@@ -6,13 +6,58 @@ body {
 }
 
 .row {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
     margin-bottom: 40px;
 }
 
 .label {
-    margin-bottom: 10px;
+    width: 200px;
+    font-size: 14px;
+}
+
+.block-wrapper {
+    display: flex;
+    align-items: stretch;
 }
 
 .block {
     background: white;
+    position: relative;
+}
+
+.ruler {
+    width: 60px;
+    position: relative;
+    border-left: 1px solid #555;
+    margin-left: 10px;
+}
+
+.tick {
+    position: absolute;
+    left: 0;
+    width: 10px;
+    height: 1px;
+    background: #aaa;
+}
+
+.tick-label {
+    position: absolute;
+    left: 12px;
+    font-size: 10px;
+    color: #aaa;
+}
+
+.controls {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.controls button {
+    padding: 8px 12px;
 }
